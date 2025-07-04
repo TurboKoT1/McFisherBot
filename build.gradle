@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group = 'me.turbokot.fisherbot'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+    maven { url 'https://repo.codemc.io/repository/maven-public/' }
+}
+
+dependencies {
+    implementation 'com.github.steveice10:mcprotocollib:1.12.2-2'
+    implementation 'com.github.steveice10:opennbt:1.6'
+
+    implementation 'org.yaml:snakeyaml:2.2'
+
+    compileOnly 'org.projectlombok:lombok:1.18.36'
+    annotationProcessor 'org.projectlombok:lombok:1.18.36'
+    testCompileOnly 'org.projectlombok:lombok:1.18.36'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.36'
+}
+
+test {
+    useJUnitPlatform()
+}

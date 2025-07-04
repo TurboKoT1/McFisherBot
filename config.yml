@@ -1,0 +1,11 @@
+#-#-#-#-#-#-> McFisher Config <-#-#-#-#-#-#
+
+host: "2.tcp.eu.ngrok.io"
+port: 10227
+
+use-proxies: false
+
+nicknames:
+  - Astolfo
+proxies: # Format: ip:port (or login:pass@ip:port)
+  - 127.0.0.1
